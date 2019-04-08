@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: triinvaht
- * Date: 08/04/2019
- * Time: 09:41
- */
+namespace TDD;
+class Receipt {
+    public function total(array $items = []) {
+        return array_sum($items);
+    }
+}
