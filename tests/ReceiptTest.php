@@ -20,10 +20,13 @@ class ReceiptTest extends TestCase {
     //we'll add variable output is equal to this arrow Receipt arrow total, pass in our variable input, add our semicolon and we'll take output and set it on line 21
     public function testTotal() {
         $input = [0,2,5,8];
-        $output = $this->Receipt->total($input);
+        //add an instance named coupon that is = null
+        $coupon  =  null;
+        //add coupon
+        $output = $this->Receipt->total($input, $coupon);
 
-        $this->assertEquals(
         //we will erase the Receipt arrow total
+        $this->assertEquals(
         //expectec  value
             15,
             $output,
@@ -45,8 +48,9 @@ class ReceiptTest extends TestCase {
 
         public function testTotalAndCoupon() {
             $input = [0,2,5,8];
-            // add dummy object
+            //pass a coupon percentage value of 0.20.
             $coupon = 0.20;
+            //coupon is used and takes 20% off the total sum
             $output = $this->Receipt->total($input, $coupon);
             $this->assertEquals(
                 12,
