@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c61f441-862d-48d4-9910-c579bc89c9cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Receipt.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receipt.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ReceiptTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ReceiptTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,12 +67,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="24" />
-          <entry key="php" value="255" />
+          <entry key="php" value="263" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="255" />
+          <entry key="PHP" value="263" />
           <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
@@ -94,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/ReceiptTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="402">
+              <caret line="78" column="21" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="21" />
               <folding>
                 <element signature="e#134#165#0#PHP" expanded="true" />
               </folding>
@@ -235,12 +233,12 @@
       <workItem from="1554705556313" duration="7013000" />
       <workItem from="1555315935454" duration="570000" />
       <workItem from="1555397922388" duration="305000" />
-      <workItem from="1555658216539" duration="710000" />
+      <workItem from="1555658216539" duration="1244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9851000" />
+    <option name="totallyTimeSpent" value="10385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -259,7 +257,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.08550186" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.13258983" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -311,8 +309,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/ReceiptTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="402">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="21" />
           <folding>
             <element signature="e#134#165#0#PHP" expanded="true" />
           </folding>
