@@ -59,7 +59,31 @@ class ReceiptTest extends TestCase {
             );
         }
 
-        public function testTax() {
+    // build a mock instance of the Receipt class and then return the sum from the two calls
+    public function testPostTaxTotal() {
+        // add $this->getMockBuilder and pass in the string that we want to build
+        $Receipt = $this->getMockBuilder('TDD\Receipt')
+            // add >setMethods() to define the methods our stub will respond to
+            ->setMethods(['tax', 'total'])
+            // return the instance of the mock with a call to getMock
+            ->getMock();
+        // add $Receipt->method
+        //pass in the string name of the method to update our stub
+        // to respond for tax and total and inform them to return the data
+        $Receipt->method('total')
+            //add ->will() to call a method to return a value equal to 10.00
+            //add $Receipt->method('tax') to repeat this for tax method
+            ->will($this->returnValue(10.00));
+        $Receipt->method('tax')
+            ->will($this->returnValue(1.00));
+        // add $result is equal to our $Receipt instance - >postTaxTotal
+        $result = $Receipt->postTaxTotal([1,2,5,8], 0.20, null);
+        //add $this->assertEquals(11.00) and then $result
+        $this->assertEquals(11.00, $result);
+    }
+
+
+    public function testTax() {
             $inputAmount = 10.00;
             //add an input amount variable of equal to 10 dollars, or 10.00
             $taxInput = 0.10;
