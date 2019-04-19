@@ -46,7 +46,9 @@ class ReceiptTest extends TestCase {
     // add public function provideTotal
     public function provideTotal() {
         return [
-            [[1,2,5,8], 16],
+            // add 'ints totalling 16'
+            // filter tests by a particular key
+            'ints totaling 16' => [[1,2,5,8], 16],
             // set the positive value one to a negative one
             //expected value is 14
             [[-1,2,5,8], 14],
