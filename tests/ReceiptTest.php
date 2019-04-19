@@ -12,26 +12,48 @@ class ReceiptTest extends TestCase {
         //add this arrow Receipt is equal to new Receiptinside of the setUp method
         $this->Receipt = new Receipt();
     }
+
     //we'll add public function tearDown
     public function tearDown() {
         // we'll add unset this arrow Receipt
         unset($this->Receipt);
     }
-    //we'll add variable output is equal to this arrow Receipt arrow total, pass in our variable input, add our semicolon and we'll take output and set it on line 21
-    public function testTotal() {
-        $input = [0,2,5,8];
-        //add an instance named coupon that is = null
+
+    //add a dot block
+    //add the annotation @dataProvider provideTotal
+    /**
+     * @dataProvider provideTotal
+     */
+
+    public function testTotal($items, $expected) {
+        // remove the input bar
+        //add an instance named coupon
         $coupon  =  null;
-        //add coupon
-        $output = $this->Receipt->total($input, $coupon);
+        //changed input to items to output
+        $output = $this->Receipt->total($items, $coupon);
 
         //we will erase the Receipt arrow total
         $this->assertEquals(
         //expectec  value
-            15,
+        //  replace our value with the expected result
+            $expected,
+            // updated the message to use double quotes
             $output,
-            'When summing the total should equal 15'
+            "When summing the total should equal {$expected}"
         );
+    }
+
+    // add public function provideTotal
+    public function provideTotal() {
+        return [
+            [[1,2,5,8], 16],
+            // set the positive value one to a negative one
+            //expected value is 14
+            [[-1,2,5,8], 14],
+            // changed the array to remove the five
+            //expected value is 11
+            [[1,2,8], 11],
+        ];
     }
 
     /*public function testTotal() {
